@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "cf-starter",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-03-04",
+
+  // KV Namespace binding
+  // Create with: npx wrangler kv namespace create MY_KV
+  // Then paste the id below
+  "kv_namespaces": [
+    {
+      "binding": "MY_KV",
+      "id": "<YOUR_KV_NAMESPACE_ID>"
+    }
+  ],
+
+  // R2 Bucket binding
+  // Create with: npx wrangler r2 bucket create my-bucket
+  "r2_buckets": [
+    {
+      "binding": "MY_BUCKET",
+      "bucket_name": "my-bucket"
+    }
+  ]
+}

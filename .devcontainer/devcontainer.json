@@ -1,0 +1,24 @@
+{
+  "name": "Cloudflare Workers",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": {
+      "label": "Wrangler Dev",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}
