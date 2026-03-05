@@ -2,7 +2,7 @@
 set -euo pipefail
 
 echo "Enabling corepack for pnpm..."
-corepack enable
+sudo corepack enable
 
 echo "Installing dependencies..."
 pnpm install
