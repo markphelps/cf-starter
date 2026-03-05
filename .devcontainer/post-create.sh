@@ -7,6 +7,12 @@ sudo corepack enable
 echo "Installing dependencies..."
 pnpm install
 
+echo "Installing OpenCode..."
+curl -fsSL https://opencode.ai/install | bash
+
+echo "Installing Claude Code..."
+curl -fsSL https://claude.ai/install.sh | bash
+
 echo ""
 echo "Setup complete! Next steps:"
 echo "  1. Run 'wrangler login' to authenticate with Cloudflare"
