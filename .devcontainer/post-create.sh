@@ -8,10 +8,10 @@ echo "Installing dependencies..."
 pnpm install
 
 echo "Installing OpenCode..."
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSLk https://opencode.ai/install | bash
 
 echo "Installing Claude Code..."
-curl -fsSL https://claude.ai/install.sh | bash
+curl -fsSLk https://claude.ai/install.sh | bash
 
 echo ""
 echo "Setup complete! Next steps:"
